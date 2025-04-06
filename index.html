@@ -79,6 +79,42 @@
             color: #0f0;
             text-decoration: underline;
         }
+        /* Estilos responsivos */
+        @media (max-width: 1200px) {
+            section {
+                grid-template-columns: repeat(6, 1fr);
+            }
+            .large {
+                grid-column: span 6;
+            }
+        }
+
+        @media (max-width: 768px) {
+            section {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            .large {
+                grid-column: span 4;
+            }
+        }
+
+        @media (max-width: 480px) {
+            section {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .large {
+                grid-column: span 2;
+            }
+        }
+
+        @media (max-width: 320px) {
+            section {
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .large {
+                grid-column: span 1;
+            }
+        }
     </style>
 </head>
 
